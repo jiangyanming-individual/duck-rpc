@@ -5,8 +5,15 @@
   <groupId>com.jiang</groupId>
   <artifactId>duck-rpc</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+<!--  父级项目 要使用pom-->
+  <packaging>pom</packaging>
 
+  <modules>
+    <module>example-consumer</module>
+    <module>example-provider</module>
+    <module>example-common</module>
+    <module>duck-rpc-easy</module>
+  </modules>
   <name>duck-rpc</name>
   <url>http://maven.apache.org</url>
 

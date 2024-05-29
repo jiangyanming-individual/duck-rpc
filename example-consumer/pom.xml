@@ -6,7 +6,6 @@
         <artifactId>duck-rpc</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <groupId>com.jiang</groupId>
     <artifactId>example-consumer</artifactId>
     <version>1.0-SNAPSHOT</version>

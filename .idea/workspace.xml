@@ -12,8 +12,9 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/duck-rpc-easy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/VertxHttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/register/LocalRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/VertxHttpServer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example-common/src/main/java/com/jiang/example/common/model/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example-common/src/main/java/com/jiang/example/common/service/UserService.java" afterDir="false" />
@@ -24,6 +25,8 @@
       <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/UserServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/example-provider/src/test/java/com/jiang/AppTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +65,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EasyProviderExample (1).executor": "Run",
     "Application.EasyProviderExample.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.duck-rpc-easy [install].executor": "Run",
@@ -75,15 +79,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="EasyProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.EasyProviderExample (1)">
+    <configuration name="EasyProviderExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiang.example.provider.EasyProviderExample" />
       <module name="example-provider" />
       <extension name="coverage">
@@ -96,8 +100,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EasyProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.jiang.example.provider.EasyProviderExample" />
+      <module name="duck-rpc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.example.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EasyProviderExample (1)" />
+      <item itemvalue="Application.EasyProviderExample" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EasyProviderExample (1)" />
         <item itemvalue="Application.EasyProviderExample" />
       </list>
     </recent_temporary>
@@ -118,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716989055514</updated>
-      <workItem from="1716989056780" duration="1915000" />
+      <workItem from="1716989056780" duration="3663000" />
     </task>
     <servers />
   </component>
