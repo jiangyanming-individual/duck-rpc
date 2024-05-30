@@ -15,6 +15,10 @@ import java.lang.reflect.Method;
  */
 public class ServiceProxy implements InvocationHandler {
 
+    /**
+     * 调用代理
+     *
+     */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
@@ -23,30 +27,27 @@ public class ServiceProxy implements InvocationHandler {
         //封装请求体
         RpcRequest rpcRequest = RpcRequest.builder().
                 serviceName(method.getDeclaringClass().getName()). //获取Class对象
-                        methodName(method.getName()).
-                parameterTypes(method.getParameterTypes()).
-                args(args).
+                methodName(method.getName()). //方法名
+                parameterTypes(method.getParameterTypes()). //方法参数类型
+                args(args). //方法中需要传入的参数
                 build();
-
         try {
             //序列化
             byte[] bodyBytes = serializer.serialize(rpcRequest);
             //发送请求
             HttpResponse httpResponse = HttpRequest.
-                    post("http://localhost:d8020").
+                    post("http://localhost:8020").
                     body(bodyBytes).
                     execute();
 
             byte[] result = httpResponse.bodyBytes();//返回对象；
-
             //反序列化,反序列化后的对象
             RpcResponse rpcResponse = serializer.deserializer(result, RpcResponse.class);
+            //返回结果
             return rpcResponse.getData();
-
         }catch (Exception e){
             e.printStackTrace();
         }
-
        return null;
     }
 }

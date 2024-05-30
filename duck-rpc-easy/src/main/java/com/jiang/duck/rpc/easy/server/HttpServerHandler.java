@@ -25,12 +25,11 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
         final Serializer jdkSerializer=new JdkSerializer();
 
         System.out.println("duck-rpc-easy Received request:" + request.method() + " " + request.uri());
-//        1. 反序列化请求为对象，并从请求对象中获取参数。
+        //1. 反序列化请求为对象，并从请求对象中获取参数。
         //异步处理http 请求 Reading Data from the Request Body
         request.bodyHandler(body->{
             //读取数据：
             byte[] bytes = body.getBytes();
-
             RpcRequest rpcRequest =null;
             try {
                 //反序列化：
@@ -41,11 +40,12 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             //构造响应对象：
             RpcResponse rpcResponse = new RpcResponse();
             //如果请求为null 直接返回
-            if (rpcResponse == null){
+            if (rpcRequest == null){
                 rpcResponse.setMessage("response is null");
                 doResponse(request,rpcResponse,jdkSerializer);
                 return;
             }
+
             try {
                 //2. 根据服务名称从本地注册器中获取到对应的服务实现类。
                 Class<?> implClass = LocalRegister.get(rpcRequest.getServiceName());

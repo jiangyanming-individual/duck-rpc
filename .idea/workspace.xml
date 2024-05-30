@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/model/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/model/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/serializer/JdkSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/serializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/VertxHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716989055514</updated>
       <workItem from="1716989056780" duration="4344000" />
-      <workItem from="1717057072954" duration="7697000" />
+      <workItem from="1717057072954" duration="11862000" />
     </task>
     <servers />
   </component>
@@ -173,6 +168,21 @@
           <properties class="cn.hutool.core.io.IORuntimeException" package="cn.hutool.core.io" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxyFactory.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
