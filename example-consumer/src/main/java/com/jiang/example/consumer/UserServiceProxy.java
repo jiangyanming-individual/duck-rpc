@@ -1,0 +1,50 @@
+package com.jiang.example.consumer;
+
+import cn.hutool.http.HttpRequest;
+import cn.hutool.http.HttpResponse;
+import com.jiang.duck.rpc.easy.model.RpcRequest;
+import com.jiang.duck.rpc.easy.model.RpcResponse;
+import com.jiang.duck.rpc.easy.serializer.JdkSerializer;
+import com.jiang.duck.rpc.easy.serializer.Serializer;
+import com.jiang.example.common.model.User;
+import com.jiang.example.common.service.UserService;
+
+import java.io.IOException;
+
+/**
+ * 静态代理，实际的实现类
+ */
+public class UserServiceProxy implements UserService {
+
+
+    //直接实现UserService接口
+    public User getUser(User user) {
+        //执行序列化器
+        Serializer serializer = new JdkSerializer();
+        //请求封装
+        RpcRequest rpcRequest = RpcRequest.builder().
+                serviceName(UserService.class.getName()).
+                methodName("getUser").
+                parameterTypes(new Class[]{User.class}).
+                args(new Object[]{user}).
+                build();
+
+        //序列化请求
+        try {
+            byte[] bodyBytes = serializer.serialize(rpcRequest);
+            byte[] result;
+            //发送请求，得到响应
+            HttpResponse httpResponse = HttpRequest.
+                    post("http://localhost:8020").
+                    body(bodyBytes).
+                    execute();
+            result =httpResponse.bodyBytes();
+            //反序列化：响应
+            RpcResponse rpcResponse = serializer.deserializer(result, RpcResponse.class);
+            //返回结果
+            return (User) rpcResponse.getData();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}

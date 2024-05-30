@@ -5,28 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/register/LocalRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/VertxHttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-common/src/main/java/com/jiang/example/common/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-common/src/main/java/com/jiang/example/common/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-provider/src/test/java/com/jiang/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jiang/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jiang/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/model/RpcRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/model/RpcResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/serializer/JdkSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/serializer/Serializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/VertxHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jiangyanming-individual&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jiangyanming-individual/duck-rpc.git&quot;,
+    &quot;accountId&quot;: &quot;2aa75221-c677-4475-9a45-ec23873f27fa&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -54,9 +54,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2h8wY0y43R0kEBwzcMCpqRxxsMn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -65,6 +65,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EasyConsumerExample.executor": "Run",
     "Application.EasyProviderExample (1).executor": "Run",
     "Application.EasyProviderExample.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -86,7 +87,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.EasyProviderExample (1)">
+  <component name="RunManager" selected="Application.EasyConsumerExample">
+    <configuration name="EasyConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiang.example.consumer.EasyConsumerExample" />
+      <module name="example-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.example.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EasyProviderExample (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiang.example.provider.EasyProviderExample" />
       <module name="example-provider" />
@@ -116,11 +130,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.EasyConsumerExample" />
       <item itemvalue="Application.EasyProviderExample (1)" />
       <item itemvalue="Application.EasyProviderExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.EasyProviderExample (1)" />
         <item itemvalue="Application.EasyProviderExample" />
       </list>
@@ -142,11 +158,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716989055514</updated>
-      <workItem from="1716989056780" duration="3663000" />
+      <workItem from="1716989056780" duration="4344000" />
+      <workItem from="1717057072954" duration="7697000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="cn.hutool.core.io.IORuntimeException" package="cn.hutool.core.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
