@@ -1,14 +1,16 @@
-package com.jiang.duck.rpc.easy.proxy;
+package com.jiang.duck.rpc.core.proxy;
+
 
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
-import com.jiang.duck.rpc.easy.model.RpcRequest;
-import com.jiang.duck.rpc.easy.model.RpcResponse;
-import com.jiang.duck.rpc.easy.serializer.JdkSerializer;
-import com.jiang.duck.rpc.easy.serializer.Serializer;
+import com.jiang.duck.rpc.core.model.RpcRequest;
+import com.jiang.duck.rpc.core.model.RpcResponse;
+import com.jiang.duck.rpc.core.serializer.JdkSerializer;
+import com.jiang.duck.rpc.core.serializer.Serializer;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+
 
 /**
  * 动态代理类

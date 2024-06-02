@@ -23,10 +23,10 @@ public class UserServiceProxy implements UserService {
         Serializer serializer = new JdkSerializer();
         //请求封装
         RpcRequest rpcRequest = RpcRequest.builder().
-                serviceName(UserService.class.getName()).
-                methodName("getUser").
-                parameterTypes(new Class[]{User.class}).
-                args(new Object[]{user}).
+                serviceName(UserService.class.getName()). //服务名
+                methodName("getUser"). //方法名
+                parameterTypes(new Class[]{User.class}). //参数类型
+                args(new Object[]{user}). // 参数
                 build();
 
         //序列化请求

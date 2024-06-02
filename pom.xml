@@ -13,6 +13,7 @@
     <module>example-provider</module>
     <module>example-common</module>
     <module>duck-rpc-easy</module>
+      <module>duck-rpc-core</module>
   </modules>
   <name>duck-rpc</name>
   <url>http://maven.apache.org</url>

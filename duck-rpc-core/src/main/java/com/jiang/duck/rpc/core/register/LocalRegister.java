@@ -1,4 +1,4 @@
-package com.jiang.duck.rpc.easy.register;
+package com.jiang.duck.rpc.core.register;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

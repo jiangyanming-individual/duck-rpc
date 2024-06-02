@@ -1,4 +1,4 @@
-package com.jiang.duck.rpc.easy.proxy;
+package com.jiang.duck.rpc.core.proxy;
 
 import java.lang.reflect.Proxy;
 

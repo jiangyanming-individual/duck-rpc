@@ -7,13 +7,15 @@ import com.jiang.example.common.service.UserService;
 public class EasyConsumerExample {
 
     public static void main(String[] args) {
-        // UserService userService=new UserServiceProxy();//代理对象
+        //静态代理
+//         UserService userService=new UserServiceProxy();
 
         //动态代理：
         UserService userService= ServiceProxyFactory.getProxy(UserService.class);
-        System.out.println(userService.hashCode());
+//        System.out.println(userService.hashCode());
         User user = new User();
         user.setName("yupi");
+        //调用服务
         User newUser = userService.getUser(user);
         if (newUser!=null){
             System.out.println("consumer get: "+newUser.getName());
