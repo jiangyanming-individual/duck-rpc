@@ -2,10 +2,10 @@ package com.jiang.example.consumer;
 
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
-import com.jiang.duck.rpc.easy.model.RpcRequest;
-import com.jiang.duck.rpc.easy.model.RpcResponse;
-import com.jiang.duck.rpc.easy.serializer.JdkSerializer;
-import com.jiang.duck.rpc.easy.serializer.Serializer;
+import com.jiang.duck.rpc.core.model.RpcRequest;
+import com.jiang.duck.rpc.core.model.RpcResponse;
+import com.jiang.duck.rpc.core.serializer.JdkSerializer;
+import com.jiang.duck.rpc.core.serializer.Serializer;
 import com.jiang.example.common.model.User;
 import com.jiang.example.common.service.UserService;
 

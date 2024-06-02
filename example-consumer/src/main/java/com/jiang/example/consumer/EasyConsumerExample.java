@@ -1,6 +1,6 @@
 package com.jiang.example.consumer;
 
-import com.jiang.duck.rpc.easy.proxy.ServiceProxyFactory;
+import com.jiang.duck.rpc.core.proxy.ServiceProxyFactory;
 import com.jiang.example.common.model.User;
 import com.jiang.example.common.service.UserService;
 

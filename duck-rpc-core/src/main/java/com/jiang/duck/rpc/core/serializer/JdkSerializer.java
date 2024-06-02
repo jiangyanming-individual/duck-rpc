@@ -3,6 +3,14 @@ package com.jiang.duck.rpc.core.serializer;
 import java.io.*;
 
 public class JdkSerializer implements Serializer {
+
+    /**
+     * 序列化 对象=> 字节流
+     * @param obj
+     * @return
+     * @param <T>
+     * @throws IOException
+     */
     @Override
     public <T> byte[] serialize(T obj) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -13,6 +21,14 @@ public class JdkSerializer implements Serializer {
         return byteArrayOutputStream.toByteArray(); //转为字节数组；
     }
 
+    /**
+     * 反序列化 字节流=> 对象
+     * @param bytes
+     * @param type
+     * @return
+     * @param <T>
+     * @throws IOException
+     */
     @Override
     public <T> T deserializer(byte[] bytes, Class<T> type) throws IOException {
 

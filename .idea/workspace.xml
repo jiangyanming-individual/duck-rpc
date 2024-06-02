@@ -5,34 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/RpcApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/RpcConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/LocalRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/JdkSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/HttpServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/VertxHttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/utils/ConfigUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/register/LocalRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/register/LocalRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/server/HttpServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/MockProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-common/src/main/java/com/jiang/example/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/src/main/java/com/jiang/example/common/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +72,7 @@
     "Application.EasyConsumerExample.executor": "Debug",
     "Application.EasyProviderExample (1).executor": "Run",
     "Application.EasyProviderExample.executor": "Run",
+    "Application.ProviderExample.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.duck-rpc-core [install].executor": "Run",
     "Maven.duck-rpc-easy [install].executor": "Run",
@@ -117,8 +100,11 @@
       <recent name="D:\WorkSpace\Java_workspace\duck-rpc\duck-rpc-core\src\main\java\com\jiang\duck\rpc\core" />
       <recent name="D:\WorkSpace\Java_workspace\duck-rpc" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jiang.example.provider" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.EasyProviderExample (1)">
+  <component name="RunManager" selected="Application.ConsumerExample">
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiang.example.consumer.ConsumerExample" />
       <module name="example-consumer" />
@@ -173,7 +159,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiang.example.provider.ProviderExample" />
+      <module name="example-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiang.example.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.ProviderExample" />
       <item itemvalue="Application.ConsumerExample" />
       <item itemvalue="Application.EasyConsumerExample" />
       <item itemvalue="Application.EasyProviderExample (1)" />
@@ -181,8 +181,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EasyProviderExample (1)" />
         <item itemvalue="Application.ConsumerExample" />
+        <item itemvalue="Application.ProviderExample" />
+        <item itemvalue="Application.EasyProviderExample (1)" />
         <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
       </list>
@@ -209,6 +210,7 @@
       <workItem from="1717115646903" duration="8095000" />
       <workItem from="1717204018443" duration="392000" />
       <workItem from="1717312331310" duration="7240000" />
+      <workItem from="1717331277424" duration="3345000" />
     </task>
     <servers />
   </component>
