@@ -25,5 +25,5 @@ public interface Serializer {
      * @param <T>
      * @throws IOException
      */
-    <T> T deserializer(byte[] bytes, Class<T> type) throws IOException;
+    <T> Object deserializer(byte[] bytes, Class<T> type) throws IOException;
 }
