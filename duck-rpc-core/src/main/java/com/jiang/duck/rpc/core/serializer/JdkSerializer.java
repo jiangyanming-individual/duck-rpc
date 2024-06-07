@@ -33,8 +33,8 @@ public class JdkSerializer implements Serializer {
     public <T> T deserializer(byte[] bytes, Class<T> type) throws IOException {
 
         //输入流
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
-        ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream);
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
+        ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
         try {
             //返回数据类型 readObject方法：转为对象
             return (T) objectInputStream.readObject();

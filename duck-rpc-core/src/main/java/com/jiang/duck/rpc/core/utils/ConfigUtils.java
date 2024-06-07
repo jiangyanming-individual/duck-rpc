@@ -8,7 +8,6 @@ import cn.hutool.setting.dialect.Props;
  */
 public class ConfigUtils {
 
-
     /**
      * 加载配置对象：
      * @param tClass

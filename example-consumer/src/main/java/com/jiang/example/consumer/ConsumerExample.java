@@ -18,7 +18,6 @@ public class ConsumerExample {
 //        System.out.println(rpc.getName());
 //        System.out.println(rpc.getVersion());
 //        System.out.println(rpc.getServerPort());
-
         UserService userService= ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
         user.setName("duck-rpc");

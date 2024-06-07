@@ -7,7 +7,6 @@ import java.io.IOException;
  */
 public interface Serializer {
 
-
     /**
      * 序列化
      * @param obj
@@ -25,5 +24,5 @@ public interface Serializer {
      * @param <T>
      * @throws IOException
      */
-    <T> Object deserializer(byte[] bytes, Class<T> type) throws IOException;
+    <T> T deserializer(byte[] bytes, Class<T> type) throws IOException;
 }

@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 
 
 /**
- * 使用单例双重检测锁模式加载配置
+ * 使用单例双重检测锁模式加载配置类
  */
 @Slf4j
 public class RpcApplication {
@@ -47,7 +47,6 @@ public class RpcApplication {
      */
     public static RpcConfig getRpcConfig() {
         if (rpcConfig == null){
-
             synchronized (RpcApplication.class){
                 if (rpcConfig == null){
                     init(); //初始化

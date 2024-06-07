@@ -1,11 +1,12 @@
 package com.jiang.duck.rpc.core.server;
 
 
+import com.jiang.duck.rpc.core.RpcApplication;
 import com.jiang.duck.rpc.core.model.RpcRequest;
 import com.jiang.duck.rpc.core.model.RpcResponse;
 import com.jiang.duck.rpc.core.register.LocalRegister;
-import com.jiang.duck.rpc.core.serializer.JdkSerializer;
 import com.jiang.duck.rpc.core.serializer.Serializer;
+import com.jiang.duck.rpc.core.serializer.SerializerFactory;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
@@ -22,18 +23,20 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
     public void handle(HttpServerRequest request) {
 
         //指定序列化器
-        final Serializer jdkSerializer=new JdkSerializer();
-
+        //Serializer jdkSerializer=new JdkSerializer();
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
         System.out.println("duck-rpc-easy Received request:" + request.method() + " " + request.uri());
         //1. 反序列化请求为对象，并从请求对象中获取参数。
         //异步处理http 请求 Reading Data from the Request Body
+        Serializer finalSerializer = serializer;
+
         request.bodyHandler(body->{
             //读取数据：
             byte[] bytes = body.getBytes();
             RpcRequest rpcRequest =null;
             try {
                 //反序列化：
-                 rpcRequest = jdkSerializer.deserializer(bytes, RpcRequest.class);
+                 rpcRequest = finalSerializer.deserializer(bytes, RpcRequest.class);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -42,7 +45,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             //如果请求为null 直接返回
             if (rpcRequest == null){
                 rpcResponse.setMessage("response is null");
-                doResponse(request,rpcResponse,jdkSerializer);
+                doResponse(request,rpcResponse,serializer);
                 return;
             }
 
@@ -64,7 +67,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
                 rpcResponse.setException(e);
             }
             //响应
-            doResponse(request,rpcResponse,jdkSerializer);
+            doResponse(request,rpcResponse,serializer);
         });
 
 

@@ -16,7 +16,6 @@ import java.io.IOException;
  */
 public class UserServiceProxy implements UserService {
 
-
     //直接实现UserService接口
     public User getUser(User user) {
         //执行序列化器
