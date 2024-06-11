@@ -1,4 +1,6 @@
-package com.jiang.duck.rpc.core.serializer;
+package com.jiang.duck.rpc.core.serializer.impl;
+
+import com.jiang.duck.rpc.core.serializer.Serializer;
 
 import java.io.*;
 

@@ -7,4 +7,8 @@ public interface RpcConstant {
      */
     String DEFAULT_CONFIG_PREFIX = "rpc";
 
+    /**
+     * 默认服务版本号
+     */
+    String DEFAULT_SERVER_VERSION = "1.0";
 }

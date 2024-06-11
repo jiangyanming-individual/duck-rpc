@@ -1,13 +1,14 @@
-package com.jiang.duck.rpc.core.serializer;
+package com.jiang.duck.rpc.core.serializer.impl;
 
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;
+import com.jiang.duck.rpc.core.serializer.Serializer;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class HessianSerializer implements Serializer{
+public class HessianSerializer implements Serializer {
 
     @Override
     public <T> byte[] serialize(T obj) throws IOException {

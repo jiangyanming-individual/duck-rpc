@@ -1,1 +1,1 @@
-hessian=com.jiang.duck.rpc.core.serializer.HessianSerializer
+hessian=com.jiang.duck.rpc.core.serializer.impl.HessianSerializer

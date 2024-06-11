@@ -23,7 +23,7 @@ public class ConsumerExample {
         user.setName("duck-rpc");
         User newUser = userService.getUser(user);
         if (newUser!=null){
-            System.out.println(newUser.getName());
+            System.out.println("getUserName:"+ newUser.getName());
         }else {
             System.out.println("newUser is null");
         }

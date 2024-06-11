@@ -1,0 +1,1 @@
+etcd=com.jiang.duck.rpc.core.register.impl.EtcdRegister

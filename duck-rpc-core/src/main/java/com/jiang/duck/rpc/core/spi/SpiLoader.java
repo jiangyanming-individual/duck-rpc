@@ -5,7 +5,6 @@ import cn.hutool.core.io.resource.ResourceUtil;
 import com.jiang.duck.rpc.core.serializer.Serializer;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.swing.plaf.nimbus.State;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -95,8 +94,8 @@ public class SpiLoader {
                     while ((line=bufferedReader.readLine())!=null) {
                         String[] splitLength = line.split("=");
                         if (splitLength.length>1){
-                            String key = splitLength[0];
-                            String className = splitLength[1];
+                            String key = splitLength[0]; //key
+                            String className = splitLength[1]; // 类
                             System.out.println("className:"+className);
                             keyCLassMap.put(key,Class.forName(className));
                         }

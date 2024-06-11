@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * 本地服务注册器:
+ * 本地服务注册器:使用Map进行存储
  */
 public class LocalRegister {
     /**

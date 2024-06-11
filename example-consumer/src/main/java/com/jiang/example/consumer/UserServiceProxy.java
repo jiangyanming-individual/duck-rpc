@@ -4,7 +4,7 @@ import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import com.jiang.duck.rpc.core.model.RpcRequest;
 import com.jiang.duck.rpc.core.model.RpcResponse;
-import com.jiang.duck.rpc.core.serializer.JdkSerializer;
+import com.jiang.duck.rpc.core.serializer.impl.JdkSerializer;
 import com.jiang.duck.rpc.core.serializer.Serializer;
 import com.jiang.example.common.model.User;
 import com.jiang.example.common.service.UserService;

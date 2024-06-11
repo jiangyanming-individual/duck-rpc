@@ -1,8 +1,9 @@
-package com.jiang.duck.rpc.core.serializer;
+package com.jiang.duck.rpc.core.serializer.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jiang.duck.rpc.core.model.RpcRequest;
 import com.jiang.duck.rpc.core.model.RpcResponse;
+import com.jiang.duck.rpc.core.serializer.Serializer;
 
 import java.io.IOException;
 
@@ -10,7 +11,7 @@ import java.io.IOException;
  * Json
  * 使用jackSon序列化和反序列化
  */
-public class JsonSerializer implements Serializer{
+public class JsonSerializer implements Serializer {
 
     //JackSon 序列化Mapper
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();

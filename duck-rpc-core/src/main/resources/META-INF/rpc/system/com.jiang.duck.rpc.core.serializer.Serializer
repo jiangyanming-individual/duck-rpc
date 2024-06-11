@@ -1,4 +1,4 @@
-jdk=com.jiang.duck.rpc.core.serializer.JdkSerializer
-json=com.jiang.duck.rpc.core.serializer.JsonSerializer
-hessian=com.jiang.duck.rpc.core.serializer.HessianSerializer
-kryo=com.jiang.duck.rpc.core.serializer.KryoSerializer
+jdk=com.jiang.duck.rpc.core.serializer.impl.JdkSerializer
+json=com.jiang.duck.rpc.core.serializer.impl.JsonSerializer
+hessian=com.jiang.duck.rpc.core.serializer.impl.HessianSerializer
+kryo=com.jiang.duck.rpc.core.serializer.impl.KryoSerializer

@@ -1,15 +1,15 @@
-package com.jiang.duck.rpc.core.serializer;
+package com.jiang.duck.rpc.core.serializer.impl;
 
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import com.jiang.duck.rpc.core.serializer.Serializer;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 
-public class KryoSerializer implements Serializer{
+public class KryoSerializer implements Serializer {
 
     private static final ThreadLocal<Kryo> KYRO_THREAD_LOCAL = ThreadLocal.withInitial(()->{
         Kryo kryo = new Kryo();

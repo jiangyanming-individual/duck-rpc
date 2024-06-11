@@ -1,8 +1,11 @@
 package com.jiang.duck.rpc.core.config;
 
-import com.jiang.duck.rpc.core.serializer.SerializerKeys;
+import com.jiang.duck.rpc.core.constant.SerializerKeys;
 import lombok.Data;
 
+/**
+ * Rpc 框架的全局配置
+ */
 @Data
 public class RpcConfig {
 
@@ -16,4 +19,8 @@ public class RpcConfig {
     private Integer serverPort = 8020;
     private String serializer= SerializerKeys.JSON; //默认序列化器
 
+    /**
+     * 注册中心的配置
+     */
+    private RegisterConfig registerConfig=new RegisterConfig();
 }

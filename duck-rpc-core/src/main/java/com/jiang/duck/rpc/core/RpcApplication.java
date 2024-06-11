@@ -1,7 +1,10 @@
 package com.jiang.duck.rpc.core;
 
+import com.jiang.duck.rpc.core.config.RegisterConfig;
 import com.jiang.duck.rpc.core.config.RpcConfig;
 import com.jiang.duck.rpc.core.constant.RpcConstant;
+import com.jiang.duck.rpc.core.register.Register;
+import com.jiang.duck.rpc.core.register.RegisterFactory;
 import com.jiang.duck.rpc.core.utils.ConfigUtils;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,12 +19,20 @@ public class RpcApplication {
     private static volatile RpcConfig rpcConfig;
 
     /**
-     * 初始化重载
+     * 真正初始阿虎
      * @param newRpcConfig
      */
     public static void  init(RpcConfig newRpcConfig){
         rpcConfig = newRpcConfig;
         log.info("RpcApplication init, config:{}", rpcConfig.toString());
+
+        //初始化注册中心配置
+        RegisterConfig registerConfig = rpcConfig.getRegisterConfig();
+        //注册中心实例
+        Register registerInstance = RegisterFactory.getInstance(registerConfig.getRegisterType()); //etcd 或者zookeeper;
+        //服务初始化：
+        registerInstance.init(registerConfig);
+        log.info("RpcApplication init, registerInstance:{}", registerInstance);
     }
 
     /**
@@ -33,7 +44,6 @@ public class RpcApplication {
             //如果存在就加载配置类
             newRpcConfig  = ConfigUtils.loadConfig(RpcConfig.class, RpcConstant.DEFAULT_CONFIG_PREFIX);
         }catch (Exception e){
-//            e.printStackTrace();
             //如果没有，就使用默认的配置类：
             newRpcConfig=new RpcConfig();
         }

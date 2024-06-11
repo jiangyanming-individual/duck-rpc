@@ -1,1 +1,1 @@
-jdk=com.jiang.duck.rpc.core.serializer.JdkSerializer
+jdk=com.jiang.duck.rpc.core.serializer.impl.JdkSerializer

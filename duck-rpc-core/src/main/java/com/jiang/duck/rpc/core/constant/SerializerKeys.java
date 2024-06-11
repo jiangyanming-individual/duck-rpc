@@ -1,4 +1,4 @@
-package com.jiang.duck.rpc.core.serializer;
+package com.jiang.duck.rpc.core.constant;
 
 
 /**
