@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/RpcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RegisterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RegisterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/RegisterKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/RegisterKeys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/RpcConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/RpcConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/SerializerKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/SerializerKeys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/RpcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/RpcRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/ServiceMetaInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/ServiceMetaInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/LocalRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/LocalRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/RegisterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/RegisterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/impl/EtcdRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/impl/EtcdRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory_back.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory_back.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/HessianSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/HessianSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JdkSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JdkSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/KryoSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/KryoSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/spi/SpiLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/spi/SpiLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/custom/com.jiang.duck.rpc.core.serializer.Serializer" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/custom/com.jiang.duck.rpc.core.serializer.Serializer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/system/com.jiang.duck.rpc.core.register.Register" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/system/com.jiang.duck.rpc.core.register.Register" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/system/com.jiang.duck.rpc.core.serializer.Serializer" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/system/com.jiang.duck.rpc.core.serializer.Serializer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/services/com.jiang.duck.rpc.core.serializer.Serializer" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/services/com.jiang.duck.rpc.core.serializer.Serializer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/test/java/etcd/EtcdDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/test/java/etcd/EtcdDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/test/java/etcd/EtcdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/test/java/etcd/EtcdService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/Resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/Resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderExample.java" afterDir="false" />
-    </list>
+    <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +80,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/WorkSpace/Java_workspace/duck-rpc/example-provider/src/main/Resources",
+    "last_opened_file_path": "D:/WorkSpace/Java_workspace/mp-demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -262,7 +229,9 @@
       <workItem from="1717808586005" duration="22144000" />
       <workItem from="1717837687030" duration="43000" />
       <workItem from="1717896057800" duration="362000" />
-      <workItem from="1718103710212" duration="4867000" />
+      <workItem from="1718103710212" duration="7087000" />
+      <workItem from="1718240659931" duration="4594000" />
+      <workItem from="1718335572670" duration="1172000" />
     </task>
     <servers />
   </component>
