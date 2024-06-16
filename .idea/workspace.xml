@@ -55,44 +55,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ConsumerExample.executor": "Run",
-    "Application.EasyConsumerExample.executor": "Debug",
-    "Application.EasyProviderExample (1).executor": "Run",
-    "Application.EasyProviderExample.executor": "Run",
-    "Application.EtcdDemo.executor": "Run",
-    "Application.EtcdRegister.executor": "Run",
-    "Application.EtcdTest.executor": "Debug",
-    "Application.ProviderExample.executor": "Run",
-    "Application.SpiLoader.executor": "Run",
-    "JUnit.EtcdService.discoveryTest.executor": "Run",
-    "JUnit.EtcdService.executor": "Run",
-    "JUnit.EtcdService.heartbeatTest.executor": "Run",
-    "JUnit.EtcdService.testRegister.executor": "Run",
-    "JUnit.EtcdService.unRegister.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.duck-rpc-core [install].executor": "Run",
-    "Maven.duck-rpc-easy [install].executor": "Run",
-    "Maven.example-common [install].executor": "Run",
-    "Maven.example-provider [install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/WorkSpace/Java_workspace/mp-demo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ConsumerExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EasyConsumerExample.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.EasyProviderExample (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.EasyProviderExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EtcdDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EtcdRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EtcdTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ProviderExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SpiLoader.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EtcdService.discoveryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EtcdService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EtcdService.heartbeatTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EtcdService.testRegister.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EtcdService.unRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.duck-rpc-core [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.duck-rpc-easy [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.example-common [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.example-provider [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WorkSpace/Java_workspace/mp-demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\Java_workspace\duck-rpc\example-provider\src\main\Resources" />
@@ -232,6 +232,9 @@
       <workItem from="1718103710212" duration="7087000" />
       <workItem from="1718240659931" duration="4594000" />
       <workItem from="1718335572670" duration="1172000" />
+      <workItem from="1718367292530" duration="2190000" />
+      <workItem from="1718412563802" duration="1914000" />
+      <workItem from="1718455591373" duration="999000" />
     </task>
     <servers />
   </component>
