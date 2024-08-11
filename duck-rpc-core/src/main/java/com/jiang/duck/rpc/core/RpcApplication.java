@@ -18,21 +18,20 @@ public class RpcApplication {
     //volatile 关键字，禁止指令重排
     private static volatile RpcConfig rpcConfig;
 
-    /**
-     * 真正初始阿虎
-     * @param newRpcConfig
-     */
-    public static void  init(RpcConfig newRpcConfig){
-        rpcConfig = newRpcConfig;
-        log.info("RpcApplication init, config:{}", rpcConfig.toString());
 
-        //初始化注册中心配置
-        RegisterConfig registerConfig = rpcConfig.getRegisterConfig();
-        //注册中心实例
-        Register registerInstance = RegisterFactory.getInstance(registerConfig.getRegisterType()); //etcd 或者zookeeper;
-        //服务初始化：
-        registerInstance.init(registerConfig);
-        log.info("RpcApplication init, registerInstance:{}", registerInstance);
+    /**
+     * 获取配置, 使用单例的双重检测锁模式
+     * @return
+     */
+    public static RpcConfig getRpcConfig() {
+        if (rpcConfig == null){
+            synchronized (RpcApplication.class){
+                if (rpcConfig == null){
+                    init(); //初始化
+                }
+            }
+        }
+        return rpcConfig;
     }
 
     /**
@@ -51,19 +50,28 @@ public class RpcApplication {
         init(newRpcConfig);
     }
 
+
     /**
-     * 获取配置, 使用单例的双重检测锁模式
-     * @return
+     *  真正初始化
+     * @param newRpcConfig
      */
-    public static RpcConfig getRpcConfig() {
-        if (rpcConfig == null){
-            synchronized (RpcApplication.class){
-                if (rpcConfig == null){
-                    init(); //初始化
-                }
-            }
-        }
-        return rpcConfig;
+    public static void  init(RpcConfig newRpcConfig){
+        rpcConfig = newRpcConfig;
+        log.info("RpcApplication init, config:{}", rpcConfig.toString());
+        //初始化注册中心配置
+        RegisterConfig registerConfig = rpcConfig.getRegisterConfig();
+        //注册中心实例
+        Register registerInstance = RegisterFactory.getInstance(registerConfig.getRegisterType()); //etcd 或者zookeeper;
+        //服务初始化：
+        registerInstance.init(registerConfig);
+        log.info("RpcApplication init, 注册中心实例为:{}", registerInstance);
+
+        //程序正常退出后：创建showdown hook
+        System.out.println("程序正常退出，销毁服务。。。");
+        Runtime.getRuntime().addShutdownHook(new Thread(registerInstance::destroy));
     }
+
+
+
 
 }

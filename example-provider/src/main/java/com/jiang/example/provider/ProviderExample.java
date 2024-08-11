@@ -14,7 +14,6 @@ public class ProviderExample {
     public static void main(String[] args) {
         //初始化
         RpcApplication.init();
-
         //注册服务到本地
         String serviceName = UserService.class.getName();
         LocalRegister.register(serviceName,UserServiceImpl.class);
@@ -23,8 +22,9 @@ public class ProviderExample {
         RpcConfig rpcConfig = RpcApplication.getRpcConfig();
         //获取注册中心配置
         RegisterConfig registerConfig = rpcConfig.getRegisterConfig();
+        //得到注册中心实例化数据：
         Register registerInstance = RegisterFactory.getInstance(registerConfig.getRegisterType());
-        //注册服务到注册中心
+        //消费者注册服务到注册中心
         ServiceMetaInfo serviceMetaInfo = new ServiceMetaInfo();
         serviceMetaInfo.setServiceName(serviceName);
         serviceMetaInfo.setServiceHost(rpcConfig.getServerHost());

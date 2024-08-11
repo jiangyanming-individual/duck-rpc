@@ -2,6 +2,7 @@ package etcd;
 
 import com.jiang.duck.rpc.core.config.RegisterConfig;
 import com.jiang.duck.rpc.core.model.ServiceMetaInfo;
+import com.jiang.duck.rpc.core.register.Register;
 import com.jiang.duck.rpc.core.register.impl.EtcdRegister;
 import org.junit.Assert;
 import org.junit.Before;
@@ -12,12 +13,14 @@ import java.util.List;
 public class EtcdService {
 
 
-    final  EtcdRegister etcdRegister=new EtcdRegister();
+    final Register etcdRegister=new EtcdRegister();
 
     @Before
-    public void testinit(){
+    public void testInit(){
         RegisterConfig registerConfig = new RegisterConfig();
-        registerConfig.setAddress("http://localhost:2379"); //注册中心地址
+        //注册中心地址
+        registerConfig.setAddress("http://localhost:2379");
+        //注册中心初始化：
         etcdRegister.init(registerConfig);
     }
 
@@ -51,7 +54,7 @@ public class EtcdService {
         serviceMetaInfo.setServiceName("myService");
         serviceMetaInfo.setServiceVersion("2.0");
         serviceMetaInfo.setServiceHost("localhost");
-        serviceMetaInfo.setServicePort(1234);
+        serviceMetaInfo.setServicePort(1236);
         //注册服务
         etcdRegister.registerService(serviceMetaInfo);
 
@@ -91,12 +94,12 @@ public class EtcdService {
     }
 
 
-//    @Test
-//    public void heartbeatTest() throws Exception {
-//        testRegister(); //测试注册
-//
-//        Thread.sleep(60 * 1000L);
-//    }
-
+    @Test
+    public void heartbeatTest() throws Exception {
+        //测试注册
+        testRegister();
+        //阻塞两分钟
+        Thread.sleep(120 * 1000L);
+    }
 
 }

@@ -44,7 +44,7 @@ public class KryoSerializer implements Serializer {
      * @throws IOException
      */
     @Override
-    public <T> T deserializer(byte[] bytes, Class<T> type) throws IOException {
+    public <T> T deserialize(byte[] bytes, Class<T> type) throws IOException {
 
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
         Input input = new Input(byteArrayInputStream);

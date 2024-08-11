@@ -51,4 +51,10 @@ public interface Register {
      */
     void heartBeat();
 
+
+    /**
+     * 消费者端监听
+     */
+    void watch(String serviceNodeKey);
+
 }

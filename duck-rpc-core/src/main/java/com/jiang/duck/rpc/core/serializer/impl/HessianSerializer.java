@@ -19,7 +19,7 @@ public class HessianSerializer implements Serializer {
     }
 
     @Override
-    public <T> T deserializer(byte[] bytes, Class<T> tClass) throws IOException {
+    public <T> T deserialize(byte[] bytes, Class<T> tClass) throws IOException {
 
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
         HessianInput hessianInput = new HessianInput(byteArrayInputStream);

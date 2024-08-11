@@ -13,10 +13,29 @@ public class RpcConfig {
      * 是否开启mock服务
      */
     private Boolean mock=false;
+
+    /**
+     * rpc名称
+     */
     private String name = "duck-rpc";
+    /**
+     * rpc 版本号
+     */
     private String version = "1.0";
+
+    /**
+     * rpc 域名
+     */
     private String serverHost = "localhost";
+
+    /**
+     * rpc 端口号
+     */
     private Integer serverPort = 8020;
+
+    /**
+     * 默认序列化器：
+     */
     private String serializer= SerializerKeys.JSON; //默认序列化器
 
     /**

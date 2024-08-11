@@ -17,7 +17,7 @@ public class SerializerFactory_back {
     private static final HashMap<String, Serializer> KEY_SERIALIZER_MAP = new HashMap<String, Serializer>(){{
         put("jdk",new JdkSerializer());
         put("json", new JsonSerializer());
-        put("kyro",new KryoSerializer());
+        put("kryo",new KryoSerializer());
         put("hessian",new HessianSerializer());
     }};
 

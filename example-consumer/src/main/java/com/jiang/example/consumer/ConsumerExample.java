@@ -13,11 +13,10 @@ import com.jiang.example.common.service.UserService;
 public class ConsumerExample {
     public static void main(String[] args) {
 
-//        RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
-//        System.out.println(rpc);
-//        System.out.println(rpc.getName());
-//        System.out.println(rpc.getVersion());
-//        System.out.println(rpc.getServerPort());
+        RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
+        System.out.println(rpc);
+
+        //消费者端获取服务：
         UserService userService= ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
         user.setName("duck-rpc");

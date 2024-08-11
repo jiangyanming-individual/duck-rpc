@@ -2,10 +2,8 @@ package com.jiang.duck.rpc.core.proxy;
 
 
 import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
-import com.caucho.burlap.io.BurlapServiceException;
 import com.jiang.duck.rpc.core.RpcApplication;
 import com.jiang.duck.rpc.core.config.RegisterConfig;
 import com.jiang.duck.rpc.core.constant.RpcConstant;
@@ -16,7 +14,6 @@ import com.jiang.duck.rpc.core.register.Register;
 import com.jiang.duck.rpc.core.register.RegisterFactory;
 import com.jiang.duck.rpc.core.serializer.Serializer;
 import com.jiang.duck.rpc.core.serializer.SerializerFactory;
-import com.jiang.duck.rpc.core.serializer.SerializerFactory_back;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,7 +30,7 @@ public class ServiceProxy implements InvocationHandler {
     private static final Logger log = LoggerFactory.getLogger(ServiceProxy.class);
 
     /**
-     * 调用代理
+     * 消费者端调用代理
      *
      */
     @Override
@@ -62,9 +59,8 @@ public class ServiceProxy implements InvocationHandler {
             ServiceMetaInfo serviceMetaInfo = new ServiceMetaInfo();
             serviceMetaInfo.setServiceName(serviceName);
             serviceMetaInfo.setServiceVersion(RpcConstant.DEFAULT_SERVER_VERSION);
-            //发现服务节点列表 (serviceName:serviceVersion)
+            //消费者发现服务节点列表 (serviceName:serviceVersion)
             List<ServiceMetaInfo> serviceMetaInfoList= registerInstance.discoveryRegister(serviceMetaInfo.getServiceKey());
-
             if (CollUtil.isEmpty(serviceMetaInfoList)){
                 throw new RuntimeException("暂时还未有服务节点");
             }
@@ -78,7 +74,7 @@ public class ServiceProxy implements InvocationHandler {
                            execute()){
                 byte[] result = httpResponse.bodyBytes();//返回对象；
                 //反序列化,反序列化后的对象
-                RpcResponse rpcResponse = serializer.deserializer(result, RpcResponse.class);
+                RpcResponse rpcResponse = serializer.deserialize(result, RpcResponse.class);
                 //返回结果
                 return rpcResponse.getData();
             }

@@ -33,7 +33,7 @@ public class JsonSerializer implements Serializer {
      * @throws IOException
      */
     @Override
-    public <T> T deserializer(byte[] bytes, Class<T> type) throws IOException {
+    public <T> T deserialize(byte[] bytes, Class<T> type) throws IOException {
 
         T obj = OBJECT_MAPPER.readValue(bytes, type);
         //由于Object对象 会在序列化时将Object原始对象擦除，编程LinkedHashMap。

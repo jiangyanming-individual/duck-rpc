@@ -39,7 +39,7 @@ public class UserServiceProxy implements UserService {
                     execute();
             result =httpResponse.bodyBytes();
             //反序列化：响应
-            RpcResponse rpcResponse = serializer.deserializer(result, RpcResponse.class);
+            RpcResponse rpcResponse = serializer.deserialize(result, RpcResponse.class);
             //返回结果
             return (User) rpcResponse.getData();
         } catch (IOException e) {

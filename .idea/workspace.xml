@@ -4,7 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="" />
+    <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/ProtocolConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/enums/ProtocolMessagStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/enums/ProtocolMessageSerializerEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/enums/ProtocolMessageTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/protocolMessage/ProtocolMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/RegistryServiceCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/RpcApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/RpcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/RpcResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/ServiceMetaInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/ServiceMetaInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/impl/EtcdRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/register/impl/EtcdRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory_back.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory_back.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/HessianSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/HessianSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JdkSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JdkSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/KryoSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/KryoSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/HttpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/test/java/etcd/EtcdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/test/java/etcd/EtcdService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/EasyConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/UserServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/src/main/Resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/Resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderExample.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +48,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -76,11 +110,12 @@
     &quot;Maven.duck-rpc-easy [install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.example-common [install].executor&quot;: &quot;Run&quot;,
     &quot;Maven.example-provider [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WorkSpace/Java_workspace/mp-demo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WorkSpace/Java_workspace/duck-rpc&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,7 +124,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -109,13 +144,13 @@
       <recent name="com.jiang.example.provider" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EtcdService.discoveryTest">
-    <configuration name="EtcdRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jiang.duck.rpc.core.register.impl.EtcdRegister" />
-      <module name="duck-rpc-core" />
+  <component name="RunManager" selected="Application.ConsumerExample">
+    <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiang.example.consumer.ConsumerExample" />
+      <module name="example-consumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jiang.duck.rpc.core.register.impl.*" />
+          <option name="PATTERN" value="com.jiang.example.consumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,17 +158,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EtcdService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="duck-rpc-core" />
+    <configuration name="ProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiang.example.provider.ProviderExample" />
+      <module name="example-provider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="etcd.*" />
+          <option name="PATTERN" value="com.jiang.example.provider.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="etcd" />
-      <option name="MAIN_CLASS_NAME" value="etcd.EtcdService" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,29 +220,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.EtcdRegister" />
-      <item itemvalue="JUnit.EtcdService" />
+      <item itemvalue="Application.ConsumerExample" />
+      <item itemvalue="Application.ProviderExample" />
       <item itemvalue="JUnit.EtcdService.heartbeatTest" />
       <item itemvalue="JUnit.EtcdService.discoveryTest" />
       <item itemvalue="JUnit.EtcdService.testRegister" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConsumerExample" />
+        <item itemvalue="Application.ProviderExample" />
+        <item itemvalue="JUnit.EtcdService.heartbeatTest" />
         <item itemvalue="JUnit.EtcdService.discoveryTest" />
         <item itemvalue="JUnit.EtcdService.testRegister" />
-        <item itemvalue="JUnit.EtcdService" />
-        <item itemvalue="Application.EtcdRegister" />
-        <item itemvalue="JUnit.EtcdService.heartbeatTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -234,42 +259,19 @@
       <workItem from="1718335572670" duration="1172000" />
       <workItem from="1718367292530" duration="2190000" />
       <workItem from="1718412563802" duration="1914000" />
-      <workItem from="1718455591373" duration="999000" />
+      <workItem from="1718455591373" duration="2838000" />
+      <workItem from="1721199078152" duration="2298000" />
+      <workItem from="1721264902847" duration="1143000" />
+      <workItem from="1721286863254" duration="3582000" />
+      <workItem from="1721561183896" duration="388000" />
+      <workItem from="1722779707378" duration="1113000" />
+      <workItem from="1722951929478" duration="3961000" />
+      <workItem from="1723126765479" duration="6999000" />
+      <workItem from="1723362898815" duration="8471000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/duck-rpc-easy/src/main/java/com/jiang/duck/rpc/easy/proxy/ServiceProxy.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -36,7 +36,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             RpcRequest rpcRequest =null;
             try {
                 //反序列化：
-                 rpcRequest = finalSerializer.deserializer(bytes, RpcRequest.class);
+                 rpcRequest = finalSerializer.deserialize(bytes, RpcRequest.class);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
