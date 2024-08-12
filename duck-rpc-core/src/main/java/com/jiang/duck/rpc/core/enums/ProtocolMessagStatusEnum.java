@@ -10,23 +10,27 @@ import lombok.Getter;
 public enum ProtocolMessagStatusEnum {
 
 
-    OK("ok", 20),
-    BAD_REQUEST("badRequest", 40),
-    BAD_RESPONSE("badResponse", 50);
+    OK(20, "ok"),
+    BAD_REQUEST(40, "badRequest"),
+    BAD_RESPONSE(50, "badResponse");
 
-    private String text;
+    private int key;
 
-    private int value;
+    private String value;
 
-    ProtocolMessagStatusEnum(String text, int value) {
-        this.text = text;
+    ProtocolMessagStatusEnum(int key, String value) {
+        this.key = key;
         this.value = value;
     }
 
-    public static ProtocolMessagStatusEnum getEnumByValue(int value) {
-
+    /**
+     * 根据key 获得信息
+     * @param key
+     * @return
+     */
+    public static ProtocolMessagStatusEnum getEnumByValue(int key) {
         for (ProtocolMessagStatusEnum anEnum : ProtocolMessagStatusEnum.values()) {
-            if (anEnum.value == value) {
+            if (anEnum.key == key) {
                 return anEnum;
             }
         }

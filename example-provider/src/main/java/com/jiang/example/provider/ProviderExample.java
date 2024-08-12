@@ -7,7 +7,7 @@ import com.jiang.duck.rpc.core.model.ServiceMetaInfo;
 import com.jiang.duck.rpc.core.register.LocalRegister;
 import com.jiang.duck.rpc.core.register.Register;
 import com.jiang.duck.rpc.core.register.RegisterFactory;
-import com.jiang.duck.rpc.core.server.VertxHttpServer;
+import com.jiang.duck.rpc.core.server.http.VertxHttpServer;
 import com.jiang.example.common.service.UserService;
 
 public class ProviderExample {

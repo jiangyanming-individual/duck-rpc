@@ -1,8 +1,7 @@
 package com.jiang.example.provider;
 
-import com.jiang.duck.rpc.core.RpcApplication;
 import com.jiang.duck.rpc.core.register.LocalRegister;
-import com.jiang.duck.rpc.core.server.VertxHttpServer;
+import com.jiang.duck.rpc.core.server.http.VertxHttpServer;
 import com.jiang.example.common.service.UserService;
 
 public class EasyProviderExample {

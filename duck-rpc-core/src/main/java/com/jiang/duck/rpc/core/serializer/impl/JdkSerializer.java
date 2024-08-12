@@ -19,7 +19,8 @@ public class JdkSerializer implements Serializer {
         //传入字节输入流：
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
         objectOutputStream.writeObject(obj);
-        objectOutputStream.close(); //关闭流
+        //关闭流：
+        objectOutputStream.close();
         return byteArrayOutputStream.toByteArray(); //转为字节数组；
     }
 
@@ -33,14 +34,13 @@ public class JdkSerializer implements Serializer {
      */
     @Override
     public <T> T deserialize(byte[] bytes, Class<T> type) throws IOException {
-
         //输入流
         ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
         ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
         try {
             //返回数据类型 readObject方法：转为对象
             return (T) objectInputStream.readObject();
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }finally {
             objectInputStream.close();

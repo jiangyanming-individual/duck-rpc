@@ -1,4 +1,4 @@
-package com.jiang.duck.rpc.core.server;
+package com.jiang.duck.rpc.core.server.http;
 
 
 import com.jiang.duck.rpc.core.RpcApplication;
@@ -69,7 +69,6 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             //响应
             doResponse(request,rpcResponse,serializer);
         });
-
 
     }
 

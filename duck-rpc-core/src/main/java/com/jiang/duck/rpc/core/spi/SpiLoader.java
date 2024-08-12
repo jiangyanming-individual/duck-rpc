@@ -129,7 +129,6 @@ public class SpiLoader {
         if (!keyCLassMap.containsKey(key)){
             throw new RuntimeException(String.format("SpiLoader 不存在 %s类型,key为%s",tClassName,key));
         }
-
         //根据key获取类
         Class<?> implClass = keyCLassMap.get(key);
         System.out.println("key:"+ key);
@@ -138,6 +137,7 @@ public class SpiLoader {
         //从实例缓存中加载指定类型的实例；
         if (!instanceCache.containsKey(implClassName)){
             try {
+                log.info("实例化序列化器：" + implClassName);
                 instanceCache.put(implClassName,implClass.newInstance());//实例化
             }catch (InstantiationException | IllegalAccessException e){
                 String errorMessage=String.format("实例化%s失败",implClassName);

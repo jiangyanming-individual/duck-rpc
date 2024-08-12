@@ -1,4 +1,4 @@
-package com.jiang.duck.rpc.core.protocolMessage;
+package com.jiang.duck.rpc.core.protocol;
 
 
 import lombok.AllArgsConstructor;

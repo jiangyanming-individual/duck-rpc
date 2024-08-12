@@ -42,6 +42,23 @@ public enum ProtocolMessageSerializerEnum {
         return Arrays.stream(values()).map(item -> item.value).collect(Collectors.toList());
     }
 
+
+    /**
+     * 根据key来获取序列化器：
+     * @param key
+     * @return
+     */
+    public static ProtocolMessageSerializerEnum getSerializerByKey(int key) {
+
+        for (ProtocolMessageSerializerEnum anEnum : ProtocolMessageSerializerEnum.values()) {
+            //判断枚举的内容是否相等：
+            if (anEnum.key == key) {
+                return anEnum;
+            }
+        }
+        return null;
+    }
+
     /**
      * 根据value获取枚举
      *
