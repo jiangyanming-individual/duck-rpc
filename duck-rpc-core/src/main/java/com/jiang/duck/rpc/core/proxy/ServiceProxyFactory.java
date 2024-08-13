@@ -39,6 +39,23 @@ public class ServiceProxyFactory {
 
 
     /**
+     * Tcp协议的代理：
+     * @param serviceClass
+     * @return
+     * @param <T>
+     */
+    public static  <T> T getTcpProxy(Class<T> serviceClass) {
+        //判断是否开启模拟
+        if (RpcApplication.getRpcConfig().getMock()) {
+            return getMockProxy(serviceClass);
+        }
+        return (T) Proxy.newProxyInstance(
+                serviceClass.getClassLoader(),
+                new Class[]{serviceClass},
+                new ServiceTcpProxy());
+    }
+
+    /**
      * 根据服务类获取mock代理对象
      * @param serviceClass
      * @return

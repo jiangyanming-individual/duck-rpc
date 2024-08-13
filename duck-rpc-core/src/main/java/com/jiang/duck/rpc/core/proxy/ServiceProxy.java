@@ -23,12 +23,11 @@ import java.util.List;
 
 
 /**
- * 动态代理类
+ * 动态代理类：请求发送(服务消费者) 使用http请求：
  */
 public class ServiceProxy implements InvocationHandler {
 
     private static final Logger log = LoggerFactory.getLogger(ServiceProxy.class);
-
     /**
      * 消费者端调用代理
      *

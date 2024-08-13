@@ -7,11 +7,10 @@ import com.jiang.duck.rpc.core.model.ServiceMetaInfo;
 import com.jiang.duck.rpc.core.register.LocalRegister;
 import com.jiang.duck.rpc.core.register.Register;
 import com.jiang.duck.rpc.core.register.RegisterFactory;
-import com.jiang.duck.rpc.core.server.http.VertxHttpServer;
 import com.jiang.duck.rpc.core.server.tcp.VertxTcpServer;
 import com.jiang.example.common.service.UserService;
 
-public class ProviderExample {
+public class TcpProviderExample {
     public static void main(String[] args) {
         //初始化
         RpcApplication.init();
@@ -35,10 +34,8 @@ public class ProviderExample {
         } catch (Exception e) {
             throw new RuntimeException("服务注册未成功！");
         }
-       //启动web服务器,发送http请求:
-        VertxHttpServer vertxHttpServer = new VertxHttpServer();
-        //读取配置类中的端口号
-        vertxHttpServer.doStart(RpcApplication.getRpcConfig().getServerPort());
-
+        //使用自定义的Tcp协议：
+        VertxTcpServer vertxTcpServer = new VertxTcpServer();
+        vertxTcpServer.doStart(RpcApplication.getRpcConfig().getServerPort());
     }
 }

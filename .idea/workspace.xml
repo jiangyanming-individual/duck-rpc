@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/protocol/ProtocolMessageDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/protocol/ProtocolMessageEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/tcp/VertxTcpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/tcp/VertxTcpServe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/test/java/protocol/ProtocolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceTcpProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/tcp/TcpServeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/TcpConsumerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/TcpProviderExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/enums/ProtocolMessagStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/enums/ProtocolMessagStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/enums/ProtocolMessageSerializerEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/enums/ProtocolMessageSerializerEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/protocolMessage/ProtocolMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/protocol/ProtocolMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/SerializerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JdkSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/serializer/impl/JdkSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/http/HttpServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/http/VertxHttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/spi/SpiLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/spi/SpiLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/EasyProviderExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceProxyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/tcp/VertxTcpServe.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/tcp/VertxTcpServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +77,7 @@
     "Application.EtcdTest.executor": "Debug",
     "Application.ProviderExample.executor": "Run",
     "Application.SpiLoader.executor": "Run",
+    "Application.TcpProviderExample.executor": "Run",
     "Application.VertxTcpClient.executor": "Run",
     "Application.VertxTcpServe.executor": "Run",
     "JUnit.EtcdService.discoveryTest.executor": "Run",
@@ -127,13 +121,15 @@
       <recent name="D:\WorkSpace\Java_workspace\duck-rpc\duck-rpc-core\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jiang.duck.rpc.core.serializer" />
+      <recent name="com.jiang.example.consumer" />
       <recent name="com.jiang.example.provider" />
+      <recent name="com.jiang.duck.rpc.core.proxy" />
+      <recent name="com.jiang.duck.rpc.core.serializer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProtocolTest.testEncoderAndDecoder">
-    <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jiang.example.consumer.ConsumerExample" />
+  <component name="RunManager" selected="Application.TcpConsumerExample">
+    <configuration name="TcpConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiang.example.consumer.TcpConsumerExample" />
       <module name="example-consumer" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +141,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jiang.example.provider.ProviderExample" />
+    <configuration name="TcpProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiang.example.provider.TcpProviderExample" />
       <module name="example-provider" />
       <extension name="coverage">
         <pattern>
@@ -171,8 +167,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VertxTcpServe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jiang.duck.rpc.core.server.tcp.VertxTcpServe" />
+    <configuration name="VertxTcpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiang.duck.rpc.core.server.tcp.VertxTcpServer" />
       <module name="duck-rpc-core" />
       <extension name="coverage">
         <pattern>
@@ -201,19 +197,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.TcpConsumerExample" />
+      <item itemvalue="Application.TcpProviderExample" />
       <item itemvalue="Application.VertxTcpClient" />
-      <item itemvalue="Application.VertxTcpServe" />
-      <item itemvalue="Application.ConsumerExample" />
-      <item itemvalue="Application.ProviderExample" />
+      <item itemvalue="Application.VertxTcpServer" />
       <item itemvalue="JUnit.ProtocolTest.testEncoderAndDecoder" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TcpConsumerExample" />
+        <item itemvalue="Application.TcpProviderExample" />
         <item itemvalue="JUnit.ProtocolTest.testEncoderAndDecoder" />
         <item itemvalue="Application.VertxTcpClient" />
-        <item itemvalue="Application.VertxTcpServe" />
-        <item itemvalue="Application.ConsumerExample" />
-        <item itemvalue="Application.ProviderExample" />
+        <item itemvalue="Application.VertxTcpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +244,7 @@
       <workItem from="1722779707378" duration="1113000" />
       <workItem from="1722951929478" duration="3961000" />
       <workItem from="1723126765479" duration="6999000" />
-      <workItem from="1723362898815" duration="19108000" />
+      <workItem from="1723362898815" duration="26548000" />
     </task>
     <servers />
   </component>

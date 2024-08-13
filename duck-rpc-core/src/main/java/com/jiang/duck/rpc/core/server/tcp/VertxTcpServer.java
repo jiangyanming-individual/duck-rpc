@@ -3,31 +3,32 @@ package com.jiang.duck.rpc.core.server.tcp;
 
 import com.jiang.duck.rpc.core.server.HttpServer;
 import io.vertx.core.Vertx;
-import io.vertx.core.buffer.Buffer;
 import io.vertx.core.net.NetServer;
 
 /**
  * vertx 实现tcp连接
  */
-public class VertxTcpServe implements HttpServer {
+public class VertxTcpServer implements HttpServer {
     @Override
     public void doStart(int port) {
-
         Vertx vertx = Vertx.vertx();
         //创建Tcp 服务器：
         NetServer server = vertx.createNetServer();
-        //处理请求：
-        server.connectHandler(socket -> {
-            //处理连接：
-            socket.handler(buffer -> {
-                byte[] requestData = buffer.getBytes();
-                //专门处理请求数据，并返回response:
-                byte[] responseData = handleRequest(requestData);
-                //发送请求：
-                socket.write(Buffer.buffer(responseData));
-            });
-        });
 
+        //处理请求：
+//        server.connectHandler(socket -> {
+//            //处理连接：
+//            socket.handler(buffer -> {
+//                byte[] requestData = buffer.getBytes();
+//                //专门处理请求数据，并返回response:
+//                byte[] responseData = handleRequest(requestData);
+//                //发送请求：
+//                socket.write(Buffer.buffer(responseData));
+//            });
+//        });
+
+        //设置TcpServeHandler
+        server.connectHandler(new TcpServeHandler());
         /**
          * 监听指定端口：
          */
@@ -57,7 +58,6 @@ public class VertxTcpServe implements HttpServer {
      * @param args
      */
     public static void main(String[] args) {
-
-        new VertxTcpServe().doStart(8888);
+        new VertxTcpServer().doStart(8888);
     }
 }
