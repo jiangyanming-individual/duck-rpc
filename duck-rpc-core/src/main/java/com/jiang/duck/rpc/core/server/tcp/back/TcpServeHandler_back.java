@@ -1,4 +1,4 @@
-package com.jiang.duck.rpc.core.server.tcp;
+package com.jiang.duck.rpc.core.server.tcp.back;
 
 import com.jiang.duck.rpc.core.enums.ProtocolMessageTypeEnum;
 import com.jiang.duck.rpc.core.model.RpcRequest;
@@ -15,13 +15,13 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 /**
- * 请求处理器(服务提供者), 使用Tcp协议
+ * 请求处理器(服务提供者), 使用Tcp协议，不解决粘包的问题；
  */
-public class TcpServeHandler implements Handler<NetSocket> {
+public class TcpServeHandler_back implements Handler<NetSocket> {
     @Override
     public void handle(NetSocket netSocket) {
-        //业务处理，使用TcpBufferHandlerWrapper防止粘包的问题：
-        TcpBufferHandlerWrapper tcpBufferHandlerWrapper = new TcpBufferHandlerWrapper(buffer -> {
+        //处理连接：
+        netSocket.handler(buffer -> {
             //1. 先解码：Buffer 转对象：
             ProtocolMessage<RpcRequest> protocolMessage = new ProtocolMessage<>();
             try {
@@ -60,8 +60,5 @@ public class TcpServeHandler implements Handler<NetSocket> {
                 throw new RuntimeException("协议消息编码失败");
             }
         });
-
-        //处理连接: 设置为处理BufferHandlerWrapper:
-        netSocket.handler(tcpBufferHandlerWrapper);
     }
 }
