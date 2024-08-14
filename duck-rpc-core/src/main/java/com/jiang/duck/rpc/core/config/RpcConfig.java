@@ -1,5 +1,6 @@
 package com.jiang.duck.rpc.core.config;
 
+import com.jiang.duck.rpc.core.constant.LoadBalancerKeys;
 import com.jiang.duck.rpc.core.constant.SerializerKeys;
 import lombok.Data;
 
@@ -39,7 +40,13 @@ public class RpcConfig {
     private String serializer= SerializerKeys.JSON; //默认序列化器
 
     /**
+     * 默认负载均衡算法：
+     */
+    private String LoadBalancer= LoadBalancerKeys.ROUND_ROBIN;
+
+    /**
      * 注册中心的配置
      */
     private RegisterConfig registerConfig=new RegisterConfig();
+
 }

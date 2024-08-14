@@ -1,0 +1,3 @@
+roundRobin=com.jiang.duck.rpc.core.loadbalancer.impl.RoundRobinLoadBalancer
+random=com.jiang.duck.rpc.core.loadbalancer.impl.RandomLoadBalancer
+consistentHash=com.jiang.duck.rpc.core.loadbalancer.impl.ConsistentHashLoadBalancer
