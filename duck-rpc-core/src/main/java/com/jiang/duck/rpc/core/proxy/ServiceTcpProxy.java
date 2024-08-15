@@ -23,6 +23,8 @@ import com.jiang.duck.rpc.core.protocol.ProtocolMessageDecoder;
 import com.jiang.duck.rpc.core.protocol.ProtocolMessageEncoder;
 import com.jiang.duck.rpc.core.register.Register;
 import com.jiang.duck.rpc.core.register.RegisterFactory;
+import com.jiang.duck.rpc.core.retry.RetryStrategy;
+import com.jiang.duck.rpc.core.retry.RetryStrategyFactory;
 import com.jiang.duck.rpc.core.serializer.Serializer;
 import com.jiang.duck.rpc.core.serializer.SerializerFactory;
 import com.jiang.duck.rpc.core.server.tcp.VertxTcpClient;
@@ -84,15 +86,18 @@ public class ServiceTcpProxy implements InvocationHandler {
             }
             //先获取第一个服务节点
 //            ServiceMetaInfo selectedServiceMetaInfo = serviceMetaInfoList.get(0);
-
             // 选用负载均衡算法：
             LoadBalancer loadBalancer = LoadBalancerFactory.getInstance(rpcConfig.getLoadBalancer());
             //传入调用参数
             HashMap<String, Object> requestParams = new HashMap<>();
             requestParams.put("methodName", rpcRequest.getMethodName());
             ServiceMetaInfo selectedServiceMetaInfo = loadBalancer.select(requestParams, serviceMetaInfoList);
-            //发送Tcp请求：
-            RpcResponse rpcResponse = VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo);
+
+            //发送Tcp请求：使用重试策略
+            RetryStrategy retryStrategy = RetryStrategyFactory.getInstance(RpcApplication.getRpcConfig().getRetry());
+            RpcResponse rpcResponse = retryStrategy.doRetry(() ->
+                    VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo)
+            );
             return rpcResponse.getData();
         } catch (Exception e) {
             throw new RuntimeException("调用失败");

@@ -1,6 +1,7 @@
 package com.jiang.duck.rpc.core.config;
 
 import com.jiang.duck.rpc.core.constant.LoadBalancerKeys;
+import com.jiang.duck.rpc.core.constant.RetryStrategyKeys;
 import com.jiang.duck.rpc.core.constant.SerializerKeys;
 import lombok.Data;
 
@@ -43,6 +44,12 @@ public class RpcConfig {
      * 默认负载均衡算法：
      */
     private String LoadBalancer= LoadBalancerKeys.ROUND_ROBIN;
+
+    /**
+     * 重试策略
+     */
+
+    private String retry= RetryStrategyKeys.NO;
 
     /**
      * 注册中心的配置

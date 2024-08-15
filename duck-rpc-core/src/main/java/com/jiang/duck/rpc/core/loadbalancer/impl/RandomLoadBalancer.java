@@ -24,6 +24,6 @@ public class RandomLoadBalancer implements LoadBalancer {
         if (size == 1) {
             return serviceMetaInfoList.get(0);
         }
-        return serviceMetaInfoList.get(random.nextInt());
+        return serviceMetaInfoList.get(random.nextInt(size));
     }
 }

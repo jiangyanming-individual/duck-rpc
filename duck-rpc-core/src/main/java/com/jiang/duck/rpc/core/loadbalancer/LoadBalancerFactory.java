@@ -10,7 +10,7 @@ import com.jiang.duck.rpc.core.spi.SpiLoader;
 public class LoadBalancerFactory {
 
     /**
-     * 静态代码块，会随着类的加载而加载：
+     * 静态代码块，会随着类的加载而加载：仅会加载一次，因为是静态的，属于类。不属于对象。
      */
     static {
         SpiLoader.load(LoadBalancer.class);

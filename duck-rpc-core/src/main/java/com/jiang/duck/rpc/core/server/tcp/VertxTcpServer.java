@@ -37,7 +37,7 @@ public class VertxTcpServer implements HttpServer {
                 System.out.println("Tcp serve is listening on port:" +port);
             }else {
                 //返回失败的结果：
-                System.out.println("Tcp serve failed to start" + netServerAsyncResult.cause());
+                System.out.println("Tcp serve failed to start: " + netServerAsyncResult.cause());
             }
         });
     }

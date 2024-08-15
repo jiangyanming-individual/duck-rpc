@@ -1,0 +1,2 @@
+no=com.jiang.duck.rpc.core.retry.impl.NoRetryStrategy
+fixInterval=com.jiang.duck.rpc.core.retry.impl.FixIntervalRetryStrategy
