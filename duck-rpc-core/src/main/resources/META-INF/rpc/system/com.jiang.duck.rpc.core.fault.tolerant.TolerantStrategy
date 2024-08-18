@@ -1,0 +1,4 @@
+failSafe=com.jiang.duck.rpc.core.fault.tolerant.impl.FailSafeTolerantStrategy
+failFast=com.jiang.duck.rpc.core.fault.tolerant.impl.FailFastTolerantStrategy
+failOver=com.jiang.duck.rpc.core.fault.tolerant.impl.FailOverTolerantStrategy
+failBack=com.jiang.duck.rpc.core.fault.tolerant.impl.FailBackTolerantStrategy

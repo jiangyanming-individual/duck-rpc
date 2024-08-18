@@ -5,35 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92fcfc3d-2965-4cfd-9981-ea0769b46575" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/RetryStrategyKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/retry/RetryStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/retry/RetryStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/retry/impl/FixIntervalRetryStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/retry/impl/NoRetryStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/system/com.jiang.duck.rpc.core.retry.RetryStrategy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/test/java/loadBalancer/loadbalancerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/test/java/retryStrategy/RetryStrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/bootstrap/ConsumerBootStrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/bootstrap/ProviderBootStrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/constant/TolerantStrategyKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/fault/tolerant/TolerantFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/fault/tolerant/TolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/fault/tolerant/impl/FailBackTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/fault/tolerant/impl/FailFastTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/fault/tolerant/impl/FailOverTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/fault/tolerant/impl/FailSafeTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/model/RpcServiceRegistryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/resources/META-INF/rpc/system/com.jiang.duck.rpc.core.fault.tolerant.TolerantStrategy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-springboot-starter/src/main/java/com/jiang/duckrpcspringbootstarter/annotation/EnableRpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-springboot-starter/src/main/java/com/jiang/duckrpcspringbootstarter/annotation/RpcReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-springboot-starter/src/main/java/com/jiang/duckrpcspringbootstarter/annotation/RpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-springboot-starter/src/main/java/com/jiang/duckrpcspringbootstarter/bootstrap/RpcConsumerBootStrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-springboot-starter/src/main/java/com/jiang/duckrpcspringbootstarter/bootstrap/RpcInitBootStrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/duck-rpc-springboot-starter/src/main/java/com/jiang/duckrpcspringbootstarter/bootstrap/RpcProviderBootStrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/jiang/example/consumer/ConsumerBootStrapStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/jiang/example/provider/ProviderBootStrapStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/RpcApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/config/RpcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/loadbalancer/LoadBalancerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/loadbalancer/LoadBalancerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/loadbalancer/impl/RandomLoadBalancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/loadbalancer/impl/RandomLoadBalancer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceTcpProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/proxy/ServiceTcpProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/tcp/VertxTcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/duck-rpc-core/src/main/java/com/jiang/duck/rpc/core/server/tcp/VertxTcpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/Resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/Resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/Resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/duck-rpc-springboot-starter">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,6 +78,9 @@
     &quot;accountId&quot;: &quot;2aa75221-c677-4475-9a45-ec23873f27fa&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -76,6 +105,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.ConsumerExample.executor": "Run",
     "Application.EasyConsumerExample.executor": "Debug",
     "Application.EasyProviderExample (1).executor": "Run",
@@ -109,8 +139,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/WorkSpace/Java_workspace/duck-rpc",
+    "last_opened_file_path": "D:/WorkSpace/Java_workspace/yu-rpc-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -135,14 +166,14 @@
       <recent name="D:\WorkSpace\Java_workspace\duck-rpc\duck-rpc-core\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jiang.duck.rpc.core.fault.tolerant" />
+      <recent name="com.jiang.duck.rpc.core.constant" />
       <recent name="com.jiang.duck.rpc.core.retry" />
       <recent name="com.jiang.duck.rpc.core.loadbalancer" />
       <recent name="com.jiang.duck.rpc.core.server.tcp" />
-      <recent name="com.jiang.example.consumer" />
-      <recent name="com.jiang.example.provider" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TcpProviderExample">
+  <component name="RunManager" selected="Application.TcpConsumerExample">
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiang.example.consumer.ConsumerExample" />
       <module name="example-consumer" />
@@ -220,13 +251,20 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TcpProviderExample" />
         <item itemvalue="Application.TcpConsumerExample" />
+        <item itemvalue="Application.TcpProviderExample" />
         <item itemvalue="Application.ConsumerExample" />
         <item itemvalue="Application.ProviderExample" />
         <item itemvalue="JUnit.loadbalancerTest.test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -260,7 +298,8 @@
       <workItem from="1722951929478" duration="3961000" />
       <workItem from="1723126765479" duration="6999000" />
       <workItem from="1723362898815" duration="26548000" />
-      <workItem from="1723634921589" duration="13159000" />
+      <workItem from="1723634921589" duration="13779000" />
+      <workItem from="1723947109642" duration="16800000" />
     </task>
     <servers />
   </component>

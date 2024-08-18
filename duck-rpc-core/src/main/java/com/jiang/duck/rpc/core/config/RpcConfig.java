@@ -3,6 +3,7 @@ package com.jiang.duck.rpc.core.config;
 import com.jiang.duck.rpc.core.constant.LoadBalancerKeys;
 import com.jiang.duck.rpc.core.constant.RetryStrategyKeys;
 import com.jiang.duck.rpc.core.constant.SerializerKeys;
+import com.jiang.duck.rpc.core.constant.TolerantStrategyKeys;
 import lombok.Data;
 
 /**
@@ -50,6 +51,11 @@ public class RpcConfig {
      */
 
     private String retry= RetryStrategyKeys.NO;
+
+    /**
+     * 容错机制
+     */
+    private String tolerant= TolerantStrategyKeys.FAIL_FAST;
 
     /**
      * 注册中心的配置

@@ -13,6 +13,8 @@ import com.jiang.duck.rpc.core.constant.RpcConstant;
 import com.jiang.duck.rpc.core.enums.ProtocolMessagStatusEnum;
 import com.jiang.duck.rpc.core.enums.ProtocolMessageSerializerEnum;
 import com.jiang.duck.rpc.core.enums.ProtocolMessageTypeEnum;
+import com.jiang.duck.rpc.core.fault.tolerant.TolerantFactory;
+import com.jiang.duck.rpc.core.fault.tolerant.TolerantStrategy;
 import com.jiang.duck.rpc.core.loadbalancer.LoadBalancer;
 import com.jiang.duck.rpc.core.loadbalancer.LoadBalancerFactory;
 import com.jiang.duck.rpc.core.model.RpcRequest;
@@ -92,12 +94,19 @@ public class ServiceTcpProxy implements InvocationHandler {
             HashMap<String, Object> requestParams = new HashMap<>();
             requestParams.put("methodName", rpcRequest.getMethodName());
             ServiceMetaInfo selectedServiceMetaInfo = loadBalancer.select(requestParams, serviceMetaInfoList);
-
-            //发送Tcp请求：使用重试策略
-            RetryStrategy retryStrategy = RetryStrategyFactory.getInstance(RpcApplication.getRpcConfig().getRetry());
-            RpcResponse rpcResponse = retryStrategy.doRetry(() ->
-                    VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo)
-            );
+            //发送Tcp请求：使用重试和容错策略：
+            RpcResponse rpcResponse;
+            try {
+                //重试机制
+                RetryStrategy retryStrategy = RetryStrategyFactory.getInstance(rpcConfig.getRetry());
+                rpcResponse = retryStrategy.doRetry(() ->
+                        VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo)
+                );
+            } catch (Exception e) {
+                // 容错机制
+                TolerantStrategy tolerantStrategy = TolerantFactory.getInstance(rpcConfig.getTolerant());
+                rpcResponse = tolerantStrategy.doTolerant(null, e);
+            }
             return rpcResponse.getData();
         } catch (Exception e) {
             throw new RuntimeException("调用失败");

@@ -71,7 +71,4 @@ public class RpcApplication {
         Runtime.getRuntime().addShutdownHook(new Thread(registerInstance::destroy));
     }
 
-
-
-
 }
